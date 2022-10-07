@@ -3,7 +3,6 @@
 <p>Make a free, no obligation enquiry and I will get back to you within 24 hours.
 You can use whichever contact option you feel most comfortable with below.</p>
 
-<%= @string %>
 
 <h2>Email</h2>
 <p>richardaruofor@gmail.com</p>
@@ -12,22 +11,19 @@ You can use whichever contact option you feel most comfortable with below.</p>
 <p>Start your project today</p>
 
 
-<h1 class="text-center mt-5">List A Costume</h1>
+<h1 class="text-center mt-5">Get in touch</h1>
 <div class="container col-6">
   <%= simple_form_for [@booking] do |f| %>
     <%= f.error_notification %>
     <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
     <div class="form-input">
-      <%= f.input :name, placeholder: "Add name of costume" %>
-      <%= f.input :address, placeholder: "Your address goes here" %>
-      <%= f.input :location, placeholder: "Add location of item" %>
-      <%= f.input :price, placeholder: "Add price of item" %>
-      <%= f.input :size, collection: %w[Small Medium Large] %>
-      <%= f.input :photo, as: :file %>
+      <%= f.input :name, placeholder: "Name" %>
+      <%= f.input :email, placeholder: "Email" %>
+      <%= f.input :message, placeholder: "Leave me a short message and I will be in touch" %>
     </div>
     <div class="form-actions">
       <div class="d-grid gap-2">
-        <%= f.submit "Create a costume", class: "btn btn-primary mb-5" %>
+        <%= f.submit "Send message", class: "btn btn-primary mb-5" %>
       </div>
       <%= link_to "Previous", root_path, class: "btn btn-outline-secondary mb-5" %>
     </div>

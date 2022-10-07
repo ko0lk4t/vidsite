@@ -1,9 +1,12 @@
 class BookingsController < ApplicationController
-  @booking = Booking.new({
-    name:params[:name],
-    email:params[:email],
-    message:params[:message],
-  })
-  booking.save
-  redirect_to root_path
+  def create
+    @booking = Booking.new(booking_params)
+  end
+
+  private
+
+  def booking_params
+    params.require(:booking).permit(:name, :email, :message)
+  end
+
 end

@@ -1,16 +1,17 @@
 class PagesController < ApplicationController
   def home
+    @booking = Booking.new
   end
 
   def new
   end
 
   def booking
-
   end
 
   def about
   end
+
   def previous
   end
 
