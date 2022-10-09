@@ -3,8 +3,7 @@ class PagesController < ApplicationController
     @booking = Booking.new
   end
 
-  def new
-  end
+
 
   def booking
   end
