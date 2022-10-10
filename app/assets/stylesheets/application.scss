@@ -10,3 +10,37 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+
+.main-container {
+  // background: rgb(2,0,36); background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgb(255, 255, 255) 0%, rgb(244, 246, 247) 0%, rgb(229, 233, 234) 100%, rgb(225, 236, 238) 100%);
+  background: #1D3557;
+  margin: 0 auto 0 auto;
+  padding-top: 20px;
+  // overflow: scroll;
+}
+
+.logo{
+  width: 120px;
+  margin: 0 auto 112px;
+}
+
+.banner-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  h3 {
+    color:#EADDB8;
+    font-size:38px;
+    font-weight:bold;
+    margin-bottom: 16px;
+    text-align: center !important;
+  }
+}
+
+.logo-size{
+    width: 68px;
+  margin: 0 auto 112px;
+}
