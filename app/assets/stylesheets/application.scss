@@ -15,7 +15,9 @@
 .main-container {
   // background: rgb(2,0,36); background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgb(255, 255, 255) 0%, rgb(244, 246, 247) 0%, rgb(229, 233, 234) 100%, rgb(225, 236, 238) 100%);
   background: #1D3557;
-  margin: 0 auto 0 auto;
+  background-size: cover;
+  height: 100vh;
+  // margin: 0 auto 0 auto;
   padding-top: 20px;
   // overflow: scroll;
 }
@@ -43,4 +45,58 @@
 .logo-size{
     width: 68px;
   margin: 0 auto 112px;
+}
+
+
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+.big-image {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.overlay h1 {
+  font-size: 65px;
+  letter-spacing: 0px;
+  margin: 0 0 5px;
+}
+
+.overlay p {
+  margin: 0;
+  font-size: 28px;
+}
+
+#vids {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 60px;
+}
+
+#vids a:first-of-type {
+  margin-bottom: 5px;
 }

@@ -1,64 +1,6 @@
-<div class="main-container">
-<div class="jumbotron mt-5">
-				<h2>
-					Hello, world!
-				</h2>
-				<p>
-					This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
-				</p>
-				<p>
-					<a class="btn btn-primary btn-large" href="#">Learn more</a>
-				</p>
-			</div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-4">
-			<h2>
-				Heading
-			</h2>
-		<iframe width="466" height="828" src="https://www.youtube.com/embed/ak0afyMvTVk" title="I need Coffee" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			<p>
-				<a class="btn" href="#">View details »</a>
-			</p>
-		</div>
-		<div class="col-md-4">
-			<h2>
-				Heading
-			</h2>
-			<p>
-				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-			</p>
-			<p>
-				<a class="btn" href="#">View details »</a>
-			</p>
-		</div>
-		<div class="col-md-4">
-			<h2>
-				Heading
-			</h2>
-			<p>
-				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-			</p>
-			<p>
-				<a class="btn" href="#">View details »</a>
-			</p>
-		</div>
-
-    <div class="container col-6">
-  <%= simple_form_for [@booking] do |f| %>
-    <%= f.error_notification %>
-    <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
-    <div class="form-input">
-      <%= f.input :name, placeholder: "Name" %>
-      <%= f.input :email, placeholder: "Email" %>
-      <%= f.input :message, placeholder: "Leave me a message and I will be in touch shortly" %>
-    </div>
-    <div class="form-actions">
-      <div class="d-grid gap-2">
-        <%= f.submit "Send message", class: "btn btn-primary mb-5" %>
-  <% end %>
-</div>
-	</div>
-</div>
+<div class="big-image">
+  <div class="text-overlay">
+    <h1>Amazing headline</h1>
+    <p>Some incredible supporting text here</p>
+  </div>
 </div>
